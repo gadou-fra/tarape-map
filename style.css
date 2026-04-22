@@ -1,0 +1,54 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #0f1220;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+/* buttons */
+button {
+  margin: 5px;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #2a2f4a;
+  color: white;
+}
+
+button:hover {
+  background: #3b4266;
+}
+
+/* result boxes */
+.party {
+  background: #1b1f36;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PARTY COLORS */
+.SD { border-left: 6px solid #ff6b6b; }   /* light red */
+.FE { border-left: 6px solid #6bbcff; }   /* light blue */
+.DDT { border-left: 6px solid #ff9f43; }  /* orange */
+.AGT { border-left: 6px solid #888888; }  /* grey */
+.ED { border-left: 6px solid #2ecc71; }   /* green */
+.LT { border-left: 6px solid #9b59b6; }   /* purple */
+.FG { border-left: 6px solid #8b0000; }   /* dark red */
+.P { border-left: 6px solid #f1c40f; }    /* yellow */
+.DNP { border-left: 6px solid #1f3a93; }  /* dark blue */
+.FT { border-left: 6px solid #d4af37; }  /* golden */
