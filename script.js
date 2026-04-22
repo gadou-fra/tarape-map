@@ -84,7 +84,7 @@ const elections = {
 const yearsDiv = document.getElementById("years");
 const resultsDiv = document.getElementById("results");
 
-// afficher les années
+// create year buttons
 for (let year in elections) {
   let btn = document.createElement("button");
   btn.innerText = year;
@@ -94,7 +94,7 @@ for (let year in elections) {
   yearsDiv.appendChild(btn);
 }
 
-// afficher résultats
+// show results
 function showYear(year) {
   resultsDiv.innerHTML = "";
 
@@ -102,15 +102,13 @@ function showYear(year) {
 
   for (let party in data) {
     let div = document.createElement("div");
+    div.classList.add("party");
+    div.classList.add(party);
 
-    div.innerText =
-      party +
-      " - " +
-      data[party].name +
-      " - " +
-      data[party].percent +
-      "% - seats: " +
-      data[party].seats;
+    div.innerHTML = `
+      <span><b>${party}</b> (${data[party].name})</span>
+      <span>${data[party].percent}% | ${data[party].seats} seats</span>
+    `;
 
     resultsDiv.appendChild(div);
   }
